@@ -17,11 +17,9 @@
     <header>
       <h1>{{ myName }}</h1>
     </header>
-    
-      <h2>My Course Goal</h2>
       <!-- Interpolating properties that are part of a Vue object -->
       <p> I am {{ myAge }}</p>  
-      <p> Someday I will be {{ oldMe }}</p>  
+      <p> Someday I will be {{ myAge + 5 }}. In other words, {{calculateAge()}}</p>  
       <p> My favorite fraction is {{ favNum }}</p>
       <p> If I had to choose a whole number, I choose {{otherFavNum()}}</p>
       <p><a v-bind:href="cjdLink">Learn about Chris</a></p>      
