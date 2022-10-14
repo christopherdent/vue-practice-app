@@ -3,21 +3,22 @@ const app = Vue.createApp({
 // equally could say data(){keys: values}, which means that the value of the data key is a function
 
         return{
-            courseGoal: "Finish these exercises so I can help my team as much as I can!",
-            howSo: "Vue is interpolating this text into the HTML page, wow!",
-            evenArray: ['Even Arrays!', 'Calvin', 'Chilito', 'Julia', 'Angie', 'Chris'],
-            cjdLink: 'http://www.christopher-dent.com'
+            myName: "Chris",
+            myAge: "39",
+            oldMe: "50",
+            favNum: Math.random(),
+            cjdLink: "http://www.christopher-dent.com",
+            houseStark: "https://static.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest?cb=20170101103142"
+
         }
     },
     methods: {
-        outputGoal() {
-            const randomNumber = Math.random()           
-                if (randomNumber < 0.5) {return "play with vue"} 
-                else {return "master vue"}            
+        otherFavNum() {
+            min = Math.ceil(0)
+            max = Math.floor(1)
+            return Math.floor(Math.random() * (max - min + 1) + min);
         }
     }
 });
-
-
 
 app.mount('#user-goal');

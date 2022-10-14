@@ -13,17 +13,19 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Vue Training Objectives and Examples</h1>
-    </header>
     <section id="user-goal">
+    <header>
+      <h1>{{ myName }}</h1>
+    </header>
+    
       <h2>My Course Goal</h2>
       <!-- Interpolating properties that are part of a Vue object -->
-      <p> {{ courseGoal }}</p>  
-      <p> {{ howSo }}</p>  
-      <p> {{ evenArray }}</p>
-      <p> {{outputGoal()}}</p>
-      <p><a v-bind:href="cjdLink">Learn about Chris</a></p>
+      <p> I am {{ myAge }}</p>  
+      <p> Someday I will be {{ oldMe }}</p>  
+      <p> My favorite fraction is {{ favNum }}</p>
+      <p> If I had to choose a whole number, I choose {{otherFavNum()}}</p>
+      <p><a v-bind:href="cjdLink">Learn about Chris</a></p>      
+     <p><img v-bind:src="houseStark"></p>
     </section>
   </body>
 </html>
